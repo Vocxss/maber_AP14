@@ -24,3 +24,23 @@ def error(text):
 def success(text):
     print(f"✅  {text}")
     
+EMOJI = {
+    "math": "🧮",
+    "riddle": "🧩",
+    "sequence": "📏",
+    "life": "❤️",
+    "trophy": "🏆",
+    "game": "🎮",
+    "next": "->",
+    "restart": "🔁",
+    "star": "⭐",
+    "cat": "🐱",
+    "panda": "🐼",
+    "monkey": "🐵",
+    "sun": "🌞",
+    "moon": "🌛",
+    "ball": "⚽",
+}
+
+def emoji(name):
+    return EMOJI.get(name, "")

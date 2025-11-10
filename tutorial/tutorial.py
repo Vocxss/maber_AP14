@@ -166,7 +166,7 @@ def sequence_tutorial():
     while True:
         lanjut_ulang_sequence = input("Tekan [Enter] untuk memulai! Ketik [Ulang] untuk melihat ulang tutorial: ")
         if lanjut_ulang_sequence == "":
-            break
+            return True
         elif lanjut_ulang_sequence.lower() == "ulang":
             sequence_tutorial()
         else:

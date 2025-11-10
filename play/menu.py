@@ -31,6 +31,15 @@ def chooseCategory():
 
         elif choice == "3":
             info("Kamu memilih kategori Deret Angka.")
+            from level import level
+            if config.current_sequence_level == 0:
+                from tutorial.tutorial import sequence_tutorial
+                if sequence_tutorial():
+                    level.progres_level("Deret Angka")
+            else:
+                level.progres_level("Deret Angka")
+            break
+
 
         elif choice == "4":
             info("Kembali ke Menu Utama.")
