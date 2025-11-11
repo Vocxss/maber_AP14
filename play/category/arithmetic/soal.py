@@ -7,7 +7,7 @@ def soal_1():
     a = random.randint(1, 100)
     b = random.randint(1, 100)
 
-    print(f"{a} + {b} = ...")
+    print(f"Berapa hasil dari {a} + {b} = ...")
     answer = a + b
     return answer
 
@@ -15,7 +15,7 @@ def soal_2():
     a = random.randint(1, 100)
     b = random.randint(1, 100)
 
-    print(f"{a} - {b} = ...")
+    print(f"Berapa hasil dari {a} - {b} = ...")
     answer = a - b
     return answer
 
@@ -31,7 +31,7 @@ def soal_4():
     b = random.randint(1, 10)
     c = random.randint(1,10)
 
-    print(f"({a} + {b}) x {c} = ...")
+    print(f"Berapa hasil dari ({a} + {b}) x {c} = ...")
     answer = (a+b)*c
     return answer
 
@@ -44,7 +44,7 @@ def soal_5():
     c = random.randint(1, 10)
     d = random.randint(1, 10)
 
-    soal = (f"({a} - {b}) x ({c} + {d}) = ...")
+    soal = (f"Berapa hasil dari ({a} - {b}) x ({c} + {d}) = ...")
     answer = int((a - b) * (c + d))
 
     print (soal)
@@ -59,7 +59,7 @@ def soal_6():
     d = random.randint(1, 10)
     e = random.randint(1, 10)
     
-    soal = (f"({a} + {b}) x {c}({d} + {e}) = ...")
+    soal = (f"Berapa hasil dari ({a} + {b}) x {c}({d} + {e}) = ...")
     answer = (a + b) * c * (d + e)
 
     print (soal)
@@ -84,7 +84,7 @@ def soal_8():
     b = random.randint(1, 10)  # Menghindari pembagian dengan 0
     c = random.randint(1, 10)
 
-    soal = (f"{a} / {b} * {c} = ...")
+    soal = (f"Berapa hasil dari {a} / {b} * {c} = ...")
     answer = (a / b) * c
 
     print (soal)
@@ -101,7 +101,7 @@ def soal_9():
         c = random.randint(1, 10)
         d = random.randint(1, 10)
     
-    print(f"Selesaikan soal berikut: ({a} + {b})/({c} - {d})")
+    print(f"Berapa hasil dari ({a} + {b})/({c} - {d})= ...")
     answer = (a + b) / (c - d)
     answer = int(answer * 100)/100
     return answer
@@ -122,7 +122,7 @@ def soal_11():
     while a - b == 0:
         b = random.randint(1, a - 1)
 
-    print(f"Selesaikan soal berikut: ({a}² - {b}²)/({a} - {b})")
+    print(f"Berapa hasil dari ({a}² - {b}²)/({a} - {b}) = ...")
     answer = (a**2 - b**2) / (a - b) 
     return answer
 
@@ -146,7 +146,7 @@ def soal_13():
     b = random.randint(5, 25)
     c = random.randint(5, 25)
     
-    print(f"\nBerapa hasil dari ({a} + {b}) x {c}^2 = ...")
+    print(f"Berapa hasil dari ({a} + {b}) x {c}^2 = ...")
     answer = (a+b) * (c**2)
     return answer
 
@@ -156,7 +156,7 @@ def soal_14():
     c = random.randint(5, 25)
     d = random.randint(5, 25)
     
-    print(f"\nBerapa hasil dari ({a} - {b})x({c} - {d}) = ...")
+    print(f"Berapa hasil dari ({a} - {b})x({c} - {d}) = ...")
     answer = (a-b) * (c-d)
     return answer
 
@@ -165,7 +165,7 @@ def soal_15():
     b = random.randint(5, 30)
     c = random.randint(5, 30)
   
-    print(f"({a} + {b})^2 + {c}^2 = ...")
+    print(f"Berapa hasil dari({a} + {b})^2 + {c}^2 = ...")
     answer = (a+b)**2 + (c**2)
     return answer
 
@@ -179,7 +179,7 @@ def soal_16():
         return soal_16()
     d = random.choice(pembagi)
     answer = hasil // d
-    print(f"\nBerapa hasil dari ({a} + {b} x {c})/{d} ?")
+    print(f"Berapa hasil dari ({a} + {b} x {c})/{d} = ...")
     return answer
 
 ## Rendy
