@@ -37,7 +37,7 @@ def chooseCategory():
             if current_riddle_level == 0:
                 from tutorial.tutorial import riddle_tutorial
                 if riddle_tutorial():
-                level.progres_level("Teka Teki Gambar")
+                    level.progres_level("Teka Teki Gambar")
             else:
                 level.progres_level("Teka Teki Gambar")
             break
